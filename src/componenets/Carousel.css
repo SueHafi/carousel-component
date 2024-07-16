@@ -1,11 +1,17 @@
 .carousel-container {
-    width: 500px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
-    /* text-align: center; */
-    background-color: aqua;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: rgba(6, 116, 242, 0.688);
     border-radius: 7px;
-    padding: 10px;
+    padding: 20px;
+}
+
+.contents-container {
+    display: flex;
+    gap: 20px;
 }
 
 .text-container {
@@ -23,6 +29,12 @@
 .author {
     font-size: 2rem;
     margin-bottom: 5px;
+}
+
+.author-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
 }
 
 .company {
