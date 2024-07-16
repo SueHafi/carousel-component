@@ -1,10 +1,9 @@
 import './App.css'
+import Carousel from './componenets/Carousel';
 
 function App() {
 
-  return (
-    <>
-    </>
+  return (<Carousel></Carousel>
   )
 }
 
