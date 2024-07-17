@@ -16,22 +16,26 @@ export default function Carousel() {
       description: "brown haired man with sun glasses smiling",
     },
   ];
-  function handleOnClick() {
+  function handleOnClick(leftButtonClick, rightButtonClick) {
     authorArray.map((element) => element.author);
     authorArray.map((element) => element.description);
   }
 
   return (
     <div className="carousel-container">
-      <button className="button left-button" onClick={(left)=>handleOnClick}>	
-      &#10092;</button>
-      <div className="contents-container">
+      <button
+        className="button left-button"
+        onClick={(leftButton) => handleOnClick}
+      >
+        &#10092;
+      </button>
+      <div className="content-container">
         <img
           className="author-img"
           src={authorImage}
           alt={imgDescription}
         ></img>
-        <div className="text-container">
+        <blockquote className="text-container">
           <p className="text paragraph">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
             dolores, laborum repellat eos amet a inventore perspiciatis eveniet
@@ -40,9 +44,14 @@ export default function Carousel() {
           </p>
           <p className="text author">Susana Jeffory</p>
           <p className="text company">Senior Developer at Global Energy LTD</p>
-        </div>
+        </blockquote>
       </div>
-      <button className="button right-button" onClick={(right)=>handleOnClick}>&#10093;</button>
+      <button
+        className="button right-button"
+        onClick={(rightButton) => handleOnClick}
+      >
+        &#10093;
+      </button>
     </div>
   );
 }
