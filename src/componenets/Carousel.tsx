@@ -23,6 +23,8 @@ export default function Carousel() {
 
   return (
     <div className="carousel-container">
+      <button className="button left-button" onClick={(left)=>handleOnClick}>	
+      &#10092;</button>
       <div className="contents-container">
         <img
           className="author-img"
@@ -40,6 +42,7 @@ export default function Carousel() {
           <p className="text company">Senior Developer at Global Energy LTD</p>
         </div>
       </div>
+      <button className="button right-button" onClick={(right)=>handleOnClick}>&#10093;</button>
     </div>
   );
 }

@@ -1,43 +1,70 @@
 .carousel-container {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    background-color: rgba(6, 116, 242, 0.688);
-    border-radius: 7px;
-    padding: 20px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  background-color: rgba(129, 241, 177, 0.688);
+  border-radius: 7px;
+  padding: 20px;
 }
 
 .contents-container {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .text-container {
-    padding: 10px;
+  padding: 10px;
 }
 
 .text {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 .paragraph {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .author {
-    font-size: 2rem;
-    margin-bottom: 5px;
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .author-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 7px;
+  width: 300px;
+  height: 300px;
+  border-radius: 7px;
 }
 
 .company {
-    font-size: 2rem;
-    margin-top: 0;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.button {
+  align-items: center;
+  border-radius: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+}
+
+.button:hover {
+ cursor: pointer;
+ background-color: aliceblue;
+}
+
+.button:active {
+    background-color: rgb(193, 187, 187);
+   }
+
+.left-button {
+  box-shadow: 3px 0px 20px 0px;
+}
+
+.right-button {
+  box-shadow: 0px 3px 20px 0px;
 }
