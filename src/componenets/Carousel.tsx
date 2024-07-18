@@ -16,16 +16,20 @@ export default function Carousel() {
       description: "brown haired man with sun glasses smiling",
     },
   ];
-  function handleOnClick(leftButtonClick, rightButtonClick) {
-    authorArray.map((element) => element.author);
-    authorArray.map((element) => element.description);
+
+  function handleOnClick(buttonClick: string): void {
+    if(buttonClick === 'rightButton') {
+      console.log('right button clicked');
+    } else {
+      console.log('left button clicked');
+    }
   }
 
   return (
     <div className="carousel-container">
       <button
         className="button left-button"
-        onClick={(leftButton) => handleOnClick}
+        onClick={() => handleOnClick('leftButton')}
       >
         &#10092;
       </button>
@@ -48,7 +52,7 @@ export default function Carousel() {
       </div>
       <button
         className="button right-button"
-        onClick={(rightButton) => handleOnClick}
+        onClick={() => handleOnClick('rightButton')}
       >
         &#10093;
       </button>

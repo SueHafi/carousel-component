@@ -7,7 +7,7 @@
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 10px;
-  background-color: rgba(129, 241, 177, 0.688);
+  background-color: rgba(52, 150, 255, 0.688);
   border-radius: 7px;
   padding: 20px 0;
 }
@@ -59,11 +59,12 @@
   border: none;
   background-color: white;
   box-shadow: 0 5px 24px rgba(0,0,0,0.25);
+  color: rgb(94, 92, 92);
 }
 
 .button:hover {
  cursor: pointer;
- background-color: aliceblue;
+ background-color: rgb(196, 225, 250);
 }
 
 .button:active {
